@@ -1,0 +1,6 @@
+message_id,site_id,zone,asset_type,sensor,measured_at,value,unit,sequence,topic,received_at,retained,rejection_reason
+comms-shelter-01-0001,base-projetee-alpha,comms-shelter-01,communications,temperature,2026-10-19T09:45:00Z,29.5,celsius,1,airbase/batch002/comms-shelter-01/temperature/0001,2026-10-19T09:46:04Z,True,doublon exact
+it-room-01-0002,base-projetee-alpha,it-room-01,tactical_it,temperature,2026-10-19T09:50:00Z,31.4,,2,airbase/batch002/it-room-01/temperature/0002,2026-10-19T09:51:00Z,True,champ manquant: unit
+it-room-01-0003,base-projetee-alpha,it-room-01,tactical_it,temperature,2026-10-19T10:15:00Z,31.5,celsius,3,airbase/batch002/it-room-01/temperature/0003,2026-10-19T09:55:00Z,True,incohérence temporelle: measured_at postérieur à received_at
+maintenance-zone-01-0002,base-projetee-alpha,maintenance-zone-01,light_maintenance,temperature,2026-10-19T09:50:00Z,86.9,fahrenheit,2,airbase/batch002/maintenance-zone-01/temperature/0002,2026-10-19T09:51:00Z,True,unité incohérente: fahrenheit
+optronics-shelter-01-0002,base-projetee-alpha,optronics-shelter-01,optronics,temperature,2026-10-19T09:50:00Z,214.7,celsius,2,airbase/batch002/optronics-shelter-01/temperature/0002,2026-10-19T09:51:00Z,True,valeur hors plage physique: 214.7 (bornes -10..60)

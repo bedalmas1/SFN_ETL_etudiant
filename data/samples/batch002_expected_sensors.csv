@@ -1,0 +1,6 @@
+topic,zone,sensor,criticality
+airbase/batch002/battery-shelter-01/temperature,battery-shelter-01,temperature,high
+airbase/batch002/comms-shelter-01/temperature,comms-shelter-01,temperature,high
+airbase/batch002/it-room-01/temperature,it-room-01,temperature,high
+airbase/batch002/maintenance-zone-01/temperature,maintenance-zone-01,temperature,medium
+airbase/batch002/optronics-shelter-01/temperature,optronics-shelter-01,temperature,high

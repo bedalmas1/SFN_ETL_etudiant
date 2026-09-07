@@ -1,0 +1,35 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0.22
+    container_name: iot-decision-mosquitto
+    ports:
+      - "127.0.0.1:1883:1883"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -h 127.0.0.1 -t '$$SYS/broker/version' -C 1 -W 2 >/dev/null"]
+      interval: 3s
+      timeout: 3s
+      retries: 10
+
+  # Broker protégé de la séquence 7: authentification et ACL obligatoires,
+  # à lancer en parallèle du broker ouvert ci-dessus pour la démonstration
+  # "broker ouvert vs broker protégé". Démarrage ciblé:
+  # docker compose -f docker/docker-compose.yml up -d --wait mosquitto-protected
+  mosquitto-protected:
+    image: eclipse-mosquitto:2.0.22
+    container_name: iot-decision-mosquitto-protected
+    ports:
+      - "127.0.0.1:1884:1884"
+    volumes:
+      - ./mosquitto/mosquitto_protected.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto/acl.conf:/mosquitto/config/acl.conf
+      - ./mosquitto/passwd:/mosquitto/config/passwd
+    healthcheck:
+      # $SYS/# est hors du périmètre de l'ACL de superviseur (lecture limitée à
+      # airbase/#): le contrôle publie plutôt sur un topic que capteur-lora est
+      # explicitement autorisé à écrire.
+      test: ["CMD-SHELL", "mosquitto_pub -h 127.0.0.1 -p 1884 -u capteur-lora -P s07-capteur-demo -t airbase/health -m ok -q 1 >/dev/null 2>&1"]
+      interval: 3s
+      timeout: 3s
+      retries: 10

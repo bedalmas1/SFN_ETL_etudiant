@@ -1,0 +1,5 @@
+topic,site_id,zone,sensor,message_id,measured_at,received_at,retained,payload_fields
+airbase/batch002/battery-shelter-01/temperature,base-projetee-alpha,battery-shelter-01,temperature,battery-shelter-01-latest,2026-10-19T09:25:00Z,2026-10-19T09:30:00Z,True,10
+airbase/batch002/comms-shelter-01/temperature,base-projetee-alpha,comms-shelter-01,temperature,comms-shelter-01-latest,2026-10-19T09:24:00Z,2026-10-19T09:30:00Z,True,10
+airbase/batch002/it-room-01/temperature,base-projetee-alpha,it-room-01,temperature,it-room-01-latest,2026-10-19T09:26:00Z,2026-10-19T09:30:00Z,True,10
+airbase/batch002/maintenance-zone-01/temperature,base-projetee-alpha,maintenance-zone-01,temperature,maintenance-zone-01-latest,2026-10-19T09:23:00Z,2026-10-19T09:30:00Z,True,10

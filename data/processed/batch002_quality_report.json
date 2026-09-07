@@ -1,0 +1,75 @@
+{
+  "raw_count": 24,
+  "clean_count": 19,
+  "rejected_count": 5,
+  "rejected_by_reason": {
+    "champ manquant": 1,
+    "doublon exact": 1,
+    "incohérence temporelle": 1,
+    "unité incohérente": 1,
+    "valeur hors plage physique": 1
+  },
+  "counts_by_zone": {
+    "battery-shelter-01": {
+      "raw": 3,
+      "clean": 3,
+      "rejected": 0
+    },
+    "comms-shelter-01": {
+      "raw": 6,
+      "clean": 5,
+      "rejected": 1
+    },
+    "it-room-01": {
+      "raw": 5,
+      "clean": 3,
+      "rejected": 2
+    },
+    "maintenance-zone-01": {
+      "raw": 5,
+      "clean": 4,
+      "rejected": 1
+    },
+    "optronics-shelter-01": {
+      "raw": 5,
+      "clean": 4,
+      "rejected": 1
+    }
+  },
+  "gaps_by_zone": {
+    "battery-shelter-01": [
+      {
+        "from": "2026-10-19T09:45:00Z",
+        "to": "2026-10-19T10:05:00Z",
+        "duration_minutes": 20.0,
+        "explained_by_rejection": false
+      }
+    ],
+    "it-room-01": [
+      {
+        "from": "2026-10-19T09:45:00Z",
+        "to": "2026-10-19T10:00:00Z",
+        "duration_minutes": 15.0,
+        "explained_by_rejection": true
+      }
+    ],
+    "maintenance-zone-01": [
+      {
+        "from": "2026-10-19T09:45:00Z",
+        "to": "2026-10-19T09:55:00Z",
+        "duration_minutes": 10.0,
+        "explained_by_rejection": true
+      }
+    ],
+    "optronics-shelter-01": [
+      {
+        "from": "2026-10-19T09:45:00Z",
+        "to": "2026-10-19T09:55:00Z",
+        "duration_minutes": 10.0,
+        "explained_by_rejection": true
+      }
+    ]
+  },
+  "confidence": "faible",
+  "decision": "ne pas conclure seul sur l'alerte de battery-shelter-01; la période sans message précédant la valeur haute exige une vérification terrain"
+}

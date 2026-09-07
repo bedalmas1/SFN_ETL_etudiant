@@ -1,0 +1,11 @@
+{
+  "expected_count": 5,
+  "observed_count": 4,
+  "missing_topics": [
+    "airbase/batch002/optronics-shelter-01/temperature"
+  ],
+  "unexpected_topics": [],
+  "complete": false,
+  "confidence": "faible",
+  "decision": "ne pas conclure pour les zones non couvertes; vérifier la source et le terrain"
+}

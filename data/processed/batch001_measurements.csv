@@ -1,0 +1,16 @@
+message_id,site_id,zone,asset_type,sensor,measured_at,value,unit,sequence,topic,received_at,retained
+battery-shelter-01-0000,base-projetee-alpha,battery-shelter-01,drone_battery_storage,temperature,2026-10-12T09:50:00Z,33.8,celsius,0,airbase/batch001/battery-shelter-01/temperature/0000,2026-10-12T10:05:00Z,True
+battery-shelter-01-0001,base-projetee-alpha,battery-shelter-01,drone_battery_storage,temperature,2026-10-12T09:55:00Z,34.6,celsius,1,airbase/batch001/battery-shelter-01/temperature/0001,2026-10-12T10:05:00Z,True
+battery-shelter-01-0002,base-projetee-alpha,battery-shelter-01,drone_battery_storage,temperature,2026-10-12T10:00:00Z,35.4,celsius,2,airbase/batch001/battery-shelter-01/temperature/0002,2026-10-12T10:05:00Z,True
+comms-shelter-01-0000,base-projetee-alpha,comms-shelter-01,communications,temperature,2026-10-12T09:50:00Z,29.2,celsius,0,airbase/batch001/comms-shelter-01/temperature/0000,2026-10-12T10:05:00Z,True
+comms-shelter-01-0001,base-projetee-alpha,comms-shelter-01,communications,temperature,2026-10-12T09:55:00Z,29.5,celsius,1,airbase/batch001/comms-shelter-01/temperature/0001,2026-10-12T10:05:00Z,True
+comms-shelter-01-0002,base-projetee-alpha,comms-shelter-01,communications,temperature,2026-10-12T10:00:00Z,29.7,celsius,2,airbase/batch001/comms-shelter-01/temperature/0002,2026-10-12T10:05:00Z,True
+it-room-01-0000,base-projetee-alpha,it-room-01,tactical_it,temperature,2026-10-12T09:50:00Z,31.0,celsius,0,airbase/batch001/it-room-01/temperature/0000,2026-10-12T10:05:00Z,True
+it-room-01-0001,base-projetee-alpha,it-room-01,tactical_it,temperature,2026-10-12T09:55:00Z,31.4,celsius,1,airbase/batch001/it-room-01/temperature/0001,2026-10-12T10:05:00Z,True
+it-room-01-0002,base-projetee-alpha,it-room-01,tactical_it,temperature,2026-10-12T10:00:00Z,31.8,celsius,2,airbase/batch001/it-room-01/temperature/0002,2026-10-12T10:05:00Z,True
+maintenance-zone-01-0000,base-projetee-alpha,maintenance-zone-01,light_maintenance,temperature,2026-10-12T09:50:00Z,30.1,celsius,0,airbase/batch001/maintenance-zone-01/temperature/0000,2026-10-12T10:05:00Z,True
+maintenance-zone-01-0001,base-projetee-alpha,maintenance-zone-01,light_maintenance,temperature,2026-10-12T09:55:00Z,30.4,celsius,1,airbase/batch001/maintenance-zone-01/temperature/0001,2026-10-12T10:05:00Z,True
+maintenance-zone-01-0002,base-projetee-alpha,maintenance-zone-01,light_maintenance,temperature,2026-10-12T10:00:00Z,30.5,celsius,2,airbase/batch001/maintenance-zone-01/temperature/0002,2026-10-12T10:05:00Z,True
+optronics-shelter-01-0000,base-projetee-alpha,optronics-shelter-01,optronics,temperature,2026-10-12T08:50:00Z,27.8,celsius,0,airbase/batch001/optronics-shelter-01/temperature/0000,2026-10-12T10:05:00Z,True
+optronics-shelter-01-0001,base-projetee-alpha,optronics-shelter-01,optronics,temperature,2026-10-12T08:55:00Z,28.0,celsius,1,airbase/batch001/optronics-shelter-01/temperature/0001,2026-10-12T10:05:00Z,True
+optronics-shelter-01-0002,base-projetee-alpha,optronics-shelter-01,optronics,temperature,2026-10-12T09:00:00Z,28.1,celsius,2,airbase/batch001/optronics-shelter-01/temperature/0002,2026-10-12T10:05:00Z,True
