@@ -16,22 +16,6 @@ Vous devez prendre une première décision avec ces seules informations, puis co
 
 À chaque étape, conservez une trace : action, confiance, preuve, incertitude, vérification.
 
-## Parcours pédagogique — 4 h
-
-Ce guide est votre support unique. Il alterne compréhension, manipulation, débat et décision ; les TP ne sont pas des recettes techniques isolées.
-
-| Temps | Étape | Trace attendue |
-|---|---|---|
-| 0:00–0:15 | Situation et vote initial | choix, confiance, information manquante |
-| 0:15–0:45 | Lire la chaîne et qualifier l'incertitude | chaîne annotée et mini-décision |
-| 0:45–1:55 | Observer puis extraire le brut | fiche observe/conclus et JSONL contrôlé |
-| 1:55–2:05 | Pause | — |
-| 2:05–2:30 | Distinguer brut, transformé et exploitable | opérations classées |
-| 2:30–3:10 | Transformer et contrôler | CSV traçable et revue croisée |
-| 3:10–3:35 | Visualiser et critiquer | PNG, observation et limite |
-| 3:35–3:55 | Décider, contester et revoter | brief de 120 mots maximum |
-| 3:55–4:00 | Exit ticket | trois phrases individuelles |
-
 ## Règle d’exécution
 
 Les blocs `bash` ci-dessous sont des commandes à copier-coller dans un terminal. Sauf indication contraire, exécutez-les depuis la racine du dépôt `course-iot-decision`. Les blocs `python` sont de petits contrôles à exécuter dans un notebook ou dans un fichier Python temporaire. Après chaque commande, vérifiez l’absence d’erreur et notez le fichier créé ou modifié.
@@ -46,7 +30,7 @@ export PYTHONPATH=src
 python3 -m pytest -q
 ```
 
-Si l’enseignant utilise Docker :
+Si on utilise Docker :
 
 ```bash
 docker compose -f docker/docker-compose.yml up -d --wait
@@ -66,7 +50,7 @@ Sans consulter les données, choisissez une seule réponse :
 
 Notez une confiance de 0 à 100 %, votre raison principale et l’information qui vous manque le plus. Tenez compte du délai de 30 minutes pour l’inspection et du coût opérationnel d’un report, sans inventer de faits absents du message de supervision.
 
-## Comprendre la chaîne avant de manipuler — 30 min
+## Comprendre la chaîne avant de manipuler 
 
 Représentez la chaîne **capteur → message → donnée structurée → indicateur → décision**. Pour chaque flèche, indiquez une transformation, une erreur plausible, la preuve qui permettrait de la détecter et l'effet possible sur l'action.
 
@@ -106,7 +90,7 @@ print("dernière ligne :", lines[-1])
 
 Contrôlez l'effectif, la première et la dernière ligne, puis relevez trois métadonnées de traçabilité. Notez ce que vous observez et ce que vous pouvez en déduire. Ne modifiez jamais le brut. Avant la pause, comparez la fraîcheur des zones et révisez votre décision provisoire sans supprimer une donnée gênante.
 
-## Brut, transformé, exploitable — 25 min
+## Brut, transformé, exploitable
 
 Classez les actions suivantes : conserver le payload ; renommer une zone ; convertir une unité ; calculer un maximum ; supprimer une ligne ; tracer un seuil. Pour chacune, indiquez si elle préserve la preuve, si elle est réversible et ce qu'elle peut changer dans la décision.
 
@@ -157,33 +141,3 @@ Rédigez une note de 120 mots maximum contenant :
 - deux preuves chiffrées retrouvables ;
 - deux incertitudes importantes ;
 - une vérification prioritaire.
-
-Un membre du binôme joue le contradicteur : quelle hypothèse pourrait renverser votre décision ? Revotez ensuite entre les mêmes options A à D, avec votre niveau de confiance.
-
-## Vérification finale à exécuter
-
-```bash
-python3 tests/validate_s01_artifacts.py
-```
-
-Cette commande vérifie les artefacts et le notebook ; elle ne rédige pas votre recommandation.
-
-## Aide en cas de blocage
-
-Avant de demander de l’aide, indiquez : l’étape, la commande ou le fichier, le message d’erreur, ce que vous avez vérifié et l’effet possible sur votre décision. Ne demandez pas seulement la réponse : demandez quelle vérification réaliser ensuite.
-
-## Canevas de recommandation
-
-- **Décision :** quelle action proposez-vous ?
-- **Confiance :** très faible / faible / moyenne / élevée ; pourquoi ?
-- **Preuves :** quelles deux observations pouvez-vous retrouver ?
-- **Incertitudes :** qu’est-ce qui pourrait rendre votre conclusion fausse ?
-- **Vérification :** que faut-il vérifier avant une action difficilement réversible ?
-
-## Exit ticket
-
-1. « La pipeline permet d’affirmer que… »
-2. « Elle ne permet pas d’affirmer que… »
-3. « Avant une action irréversible, je vérifierais… »
-
-Les solutions, valeurs de référence et observations attendues sont réservées au guide enseignant et au corrigé.
