@@ -1,12 +1,12 @@
-# Guide étudiant — Séquence 6bis
+# Guide étudiant
 
 ## Mission
 
 Une phrase circule ce matin sur le réseau de la base : « la température moyenne de la base est normale. » Le commandant s'appuie sur cette phrase pour décider s'il maintient l'activité prévue. Il vous confie la vérification.
 
-En fin de matinée, une sixième zone entre en service : `fuel-storage-01`, un dépôt de stockage carburant. Vous allez la suivre jusqu'à la fin de la séance.
+Une sixième zone va entrer en service : `fuel-storage-01`, un dépôt de stockage carburant. Vous allez la suivre jusqu'à la fin de la séance.
 
-**À la fin de la séance,vous serez associé à la recommandation transmise au commandant sur `fuel-storage-01`.**
+**À la fin de la séance, vous serez associé à la recommandation transmise au commandant sur `fuel-storage-01`.**
 
 Ouvrez maintenant `cas_fil_rouge.md` : c'est votre dossier de mission. Il va se compléter au fur et à mesure de la séance. Ouvrez aussi `tp_seance.py` : c'est le seul fichier de code dans lequel vous devez écrire.
 
