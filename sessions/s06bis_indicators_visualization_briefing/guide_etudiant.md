@@ -22,7 +22,7 @@ export PYTHONPATH=src
 python3 -m pytest -q
 ```
 
-## Étape 1 — indicateurs et zone masquée — 35 min
+## Étape 1 — indicateurs et zone masquée
 
 Complétez `etape1_indicateurs()` : le chargement du CSV est déjà fait (`rows`). Calculez vous-même la moyenne globale, le maximum de chaque zone, puis la ou les zones dont le maximum dépasse 35 °C alors que la moyenne globale reste dessous.
 
@@ -34,17 +34,17 @@ Vérifiez à la main la moyenne d'une seule zone (l'équipe data pose l'addition
 
 **Trace dans `cas_fil_rouge.md`, chapitre 1.**
 
-## Débrief — que cache toujours un indicateur ? — 15 min
+## Débrief — que cache toujours un indicateur ?
 
 La moyenne et le maximum racontent-ils la même histoire ? Que faudrait-il systématiquement faire avant de se fier à un résumé global ?
 
-## Du calcul transparent au calcul opaque — 25 min
+## Du calcul transparent au calcul opaque
 
 Un **score automatique** transforme des mesures en recommandation, sans que sa logique soit lue au moment de la décision. Notions à maîtriser : biais d'automatisation, calibration, dérive, audit.
 
 **Classez en vrai/faux, avec argument :** un score est plus objectif parce qu'il est automatique ; un modèle calibré une fois reste valable pour toute nouvelle zone ; on peut auditer un score aussi facilement qu'une moyenne.
 
-## Étape 2 — interroger le score sans le lire — 20 min
+## Étape 2 — interroger le score sans le lire
 
 Complétez `etape2_score_zones_connues()` : le chargement de `data/raw/batch001_raw.jsonl` est déjà fait (`rows`). Appelez `score_all_zones(rows)` -- la boîte noire fournie, la seule fonction importée de `iot_decision` dans tout ce fichier -- et affichez zone, score et décision pour chacune des cinq zones.
 
@@ -52,7 +52,7 @@ D'après le classement de l'étape 1, quelle zone attendez-vous en tête du scor
 
 **Trace dans `cas_fil_rouge.md`, chapitre 2.**
 
-## Étape 3 — une sixième zone — 20 min
+## Étape 3 — une sixième zone
 
 N'exécutez cette étape qu'au signal de l'enseignant, après la pause.
 
@@ -66,7 +66,7 @@ Seulement maintenant, ouvrez `src/iot_decision/risk_score.py` et lisez sa logiqu
 
 **Trace dans `cas_fil_rouge.md`, chapitre 3.**
 
-## Échelle, seuil, annotation — 20 min
+## Échelle, seuil, annotation
 
 Quatre notions pour l'après-midi : échelle (bornes d'un axe), seuil affiché, annotation, incertitude visuelle (un trait continu peut masquer un silence de données).
 
@@ -74,7 +74,7 @@ Complétez ensuite `etape4_extraction_apres_midi()` : le chargement des deux fic
 
 **Question :** pourquoi isoler cette fenêtre plutôt que garder tout le lot pour la suite ?
 
-## Étape 5 — le même graphique, deux seuils — 25 min
+## Étape 5 — le même graphique, deux seuils
 
 Complétez `etape5_deux_graphiques()` : écrivez une fonction de tracé (matplotlib : courbe des valeurs, ligne horizontale au seuil, titre, `savefig`) et appelez-la deux fois, en ne changeant que `threshold` : d'abord 35.0, puis 28.0. Attention à ce que le titre utilise bien la variable `threshold`, pas un texte écrit en dur.
 
@@ -82,7 +82,7 @@ Complétez `etape5_deux_graphiques()` : écrivez une fonction de tracé (matplot
 
 **Trace dans `cas_fil_rouge.md`, chapitre 4.**
 
-## Étape 6-7 — note de briefing et recommandation — 20 min
+## Étape 6-7 — note de briefing et recommandation
 
 Complétez `etape6_note_de_briefing()` : avec `threshold = 28.0`, comptez les mesures au-dessus du seuil, trouvez le maximum, calculez le plus grand écart en minutes entre deux mesures consécutives, déduisez-en une confiance, puis affichez une note (message principal, limite, confiance, vérification).
 
@@ -92,7 +92,7 @@ Complétez enfin `etape7_recommandation_finale()` : moins de 100 mots, avec déc
 
 **Trace dans `cas_fil_rouge.md`, chapitre 5.**
 
-## Brief oral et questions contradictoires — 15 min
+## Brief oral et questions contradictoires
 
 Rôles : cellule data, décideur pressé, red team.
 
