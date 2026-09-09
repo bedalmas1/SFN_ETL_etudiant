@@ -92,25 +92,7 @@ Complétez enfin `etape7_recommandation_finale()` : moins de 100 mots, avec déc
 
 **Trace dans `cas_fil_rouge.md`, chapitre 5.**
 
-## Brief oral et questions contradictoires
-
-Rôles : cellule data, décideur pressé, red team.
+## Brief oral
 
 - « Si je vous impose l'autre seuil sur le même graphique, votre recommandation change-t-elle ? »
 - « Qu'est-ce qui, dans votre dossier, n'est pas une mesure mais un choix de votre part ? »
-
-## Validation finale à exécuter
-
-```bash
-python3 tests/validate_s06bis_artifacts.py
-```
-
-## Exit ticket
-
-1. « Un indicateur, un score ou un graphique honnête permet d'affirmer que… »
-2. « Il ne permet pas d'affirmer que… »
-3. « Avant de répéter un texte produit par un outil déjà audité, je vérifierais… »
-
-## Aide en cas de blocage
-
-Avant de demander de l'aide, indiquez : l'étape, la commande ou le fichier, le message d'erreur, ce que vous avez déjà vérifié. Les solutions, valeurs de référence et observations attendues sont réservées au guide enseignant et au corrigé.
