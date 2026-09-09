@@ -68,7 +68,7 @@ Seulement maintenant, ouvrez `src/iot_decision/risk_score.py` et lisez sa logiqu
 
 ## Échelle, seuil, annotation
 
-Quatre notions pour l'après-midi : échelle (bornes d'un axe), seuil affiché, annotation, incertitude visuelle (un trait continu peut masquer un silence de données).
+Quatre notions : échelle (bornes d'un axe), seuil affiché, annotation, incertitude visuelle (un trait continu peut masquer un silence de données).
 
 Complétez ensuite `etape4_extraction_apres_midi()` : le chargement des deux fichiers `fuel-storage-01` est déjà fait (`rows`, triées). Écrivez `rows` dans `data/processed/batch003_measurements.csv` avec `csv.DictWriter`, puis ne gardez que les lignes à partir de `2026-11-02T10:00:00Z` et écrivez-les dans `data/processed/batch003_afternoon_window.csv`.
 
