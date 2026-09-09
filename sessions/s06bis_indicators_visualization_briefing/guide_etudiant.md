@@ -4,40 +4,15 @@
 
 Une phrase circule ce matin sur le réseau de la base : « la température moyenne de la base est normale. » Le commandant s'appuie sur cette phrase pour décider s'il maintient l'activité prévue. Il vous confie la vérification.
 
-En fin de matinée, une sixième zone entre en service : `fuel-storage-01`, un dépôt de stockage carburant. Vous allez la suivre jusqu'à la fin de la séance — un seul dossier, un seul fichier de code, un seul cas.
+En fin de matinée, une sixième zone entre en service : `fuel-storage-01`, un dépôt de stockage carburant. Vous allez la suivre jusqu'à la fin de la séance.
 
-**À la fin de la séance, c'est votre nom qui est associé à la recommandation transmise au commandant sur `fuel-storage-01`.**
+**À la fin de la séance,vous serez associé à la recommandation transmise au commandant sur `fuel-storage-01`.**
 
-Ouvrez maintenant `cas_fil_rouge.md` : c'est votre dossier de mission. Il se complète chapitre par chapitre, au même rythme que ce guide. Ouvrez aussi `tp_seance.py` : c'est votre seul fichier de code pour toute la séance — vous le complétez étape par étape, jamais dans un autre fichier.
-
-## Vos rôles en binôme
-
-- **Équipe data** : exécute le code, relève les chiffres exacts, vérifie qu'un résultat est reproductible.
-- **Décideur critique** : ne lâche rien avant une preuve chiffrée ; pour chaque affirmation, demande « dans quel fichier, avec quelle valeur ? ».
-
-**À la pause (2:05), échangez les rôles.**
-
-## Parcours pédagogique — 4 h
-
-| Temps | Étape | Chapitre de `cas_fil_rouge.md` |
-|---|---|---|
-| 0:00–0:15 | Accroche et vote initial | Situation initiale |
-| 0:15–0:30 | Moyenne, maximum, seuil : compression | — |
-| 0:30–1:05 | `etape1_indicateurs` | Chapitre 1 |
-| 1:05–1:20 | Débrief — que cache un indicateur ? | — |
-| 1:20–1:45 | Du calcul transparent au calcul opaque | — |
-| 1:45–2:05 | `etape2_score_zones_connues` | Chapitre 2 |
-| 2:05–2:15 | Pause — échange des rôles | — |
-| 2:15–2:35 | `etape3_nouvelle_zone` | Chapitre 3 |
-| 2:35–2:55 | Échelle/seuil/annotation, `etape4_extraction_apres_midi` | Chapitre 4 |
-| 2:55–3:20 | `etape5_deux_graphiques` | Chapitre 4 |
-| 3:20–3:40 | `etape6_note_de_briefing`, `etape7_recommandation_finale` | Chapitre 5 |
-| 3:40–3:55 | Brief oral et questions contradictoires | — |
-| 3:55–4:00 | Exit ticket | — |
+Ouvrez maintenant `cas_fil_rouge.md` : c'est votre dossier de mission. Il va se compléter au fur et à mesure de la séance. Ouvrez aussi `tp_seance.py` : c'est le seul fichier de code dans lequel vous devez écrire.
 
 ## Règle d'exécution
 
-**Règle impérative : n'ouvrez `src/iot_decision/risk_score.py` sous aucun prétexte avant d'avoir terminé l'étape 3.** L'intérêt de l'exercice dépend entièrement de ne pas connaître sa logique à l'avance.
+**Règle impérative : n'ouvrez `src/iot_decision/risk_score.py` sous aucun prétexte avant d'avoir terminé l'étape 3.**. Jouez le jeu ;)
 
 ## Préparer l'environnement
 
@@ -46,12 +21,6 @@ python3 -m pip install -r sessions/s06bis_indicators_visualization_briefing/requ
 export PYTHONPATH=src
 python3 -m pytest -q
 ```
-
-Cette séquence ne nécessite pas Docker ni de broker MQTT.
-
-## Vote initial — 15 min
-
-Sans consulter aucun fichier, choisissez : maintenir l'activité, décomposer par zone avant de décider, ou suspendre par prudence. Notez une confiance de 0 à 100 %, votre raison principale, l'information qui vous manque le plus.
 
 ## Étape 1 — indicateurs et zone masquée — 35 min
 
