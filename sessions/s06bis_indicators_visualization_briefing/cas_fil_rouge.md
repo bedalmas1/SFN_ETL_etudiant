@@ -1,20 +1,14 @@
-# Cas fil rouge — Séquence 6bis
-
-> Ce document est le vôtre pour toute la séance. Il se complète par chapitres, dans l'ordre où ils se débloquent en cours. Ne lisez pas un chapitre avant que l'enseignant ne l'annonce : chacun est construit pour être découvert au bon moment, pas relu à l'avance.
-
 ## Situation initiale
 
 Base aérienne projetée alpha. Cinq zones critiques sont déjà équipées de capteurs de température : `battery-shelter-01`, `comms-shelter-01`, `it-room-01`, `maintenance-zone-01`, `optronics-shelter-01`. Une sixième zone vient d'être mise en service ce matin pour une mission de ravitaillement : `fuel-storage-01`, un dépôt de stockage carburant.
 
-Vous êtes la cellule data de service. Votre dossier sur `fuel-storage-01` est vide au début de la séance. Il s'épaissit à chaque chapitre, avec le même fichier `tp_seance.py` que vous complétez au fur et à mesure — jamais un nouveau fichier, jamais un nouvel outil.
+Vous êtes la cellule data de service. Votre dossier sur `fuel-storage-01` est vide au début de la séance.
 
-**Question qui reste ouverte toute la journée : `fuel-storage-01` mérite-t-elle une vérification terrain avant la fin de votre service ?**
+**Question qui reste ouverte pour la séquence : `fuel-storage-01` mérite-t-elle une vérification terrain avant la fin de votre service ?**
 
 ---
 
-## Chapitre 1 — Indicateurs (matin)
-
-*Débloqué à l'ouverture de la séance.*
+## Chapitre 1 — Indicateurs
 
 > « La température moyenne de la base est normale. »
 
@@ -26,7 +20,7 @@ Notes de chapitre (à remplir en séance) :
 - Zone dont le maximum dépasse pourtant le seuil pédagogique (35 °C) : ______
 - Ce que cette moyenne ne permet pas d'affirmer : ______
 
-## Chapitre 2 — Score automatique (matin)
+## Chapitre 2 — Score automatique
 
 *Débloqué après le débrief du chapitre 1.*
 
@@ -35,9 +29,7 @@ Un score automatique existe déjà pour les cinq zones connues. Vous l'utilisez 
 - Zone signalée « inspection recommandée » par le score : ______
 - Ce score confirme-t-il ou contredit-il le chapitre 1 ? ______
 
-## Chapitre 3 — Une nouvelle zone (bascule)
-
-*Débloqué en fin de matinée.*
+## Chapitre 3 — Une nouvelle zone
 
 `fuel-storage-01` vient d'envoyer ses cinq premières mesures. Vous appliquez le même score automatique, sans le modifier.
 
@@ -47,9 +39,7 @@ Un score automatique existe déjà pour les cinq zones connues. Vous l'utilisez 
 
 Question à garder en tête pour l'après-midi : **un score qui n'a jamais été calibré sur ce type de zone peut-il seulement se tromper « fort », ou peut-il aussi se tromper en restant silencieux ?**
 
-## Chapitre 4 — Un nouveau relevé (après-midi)
-
-*Débloqué après la pause.*
+## Chapitre 4 — Un nouveau relevé
 
 Un nouveau relevé de `fuel-storage-01` arrive en tout début d'après-midi : trois mesures, avec un vide de vingt-cinq minutes au milieu. Vous produisez deux graphiques honnêtes à partir des trois mêmes points — rien n'est recalculé, seul un paramètre change entre les deux appels.
 
