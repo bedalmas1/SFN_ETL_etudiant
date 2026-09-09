@@ -94,7 +94,10 @@ with open(raw_path, encoding="utf-8") as flux:
 
 print("messages chargés :", len(messages))
 
-# Question 1 : combien de messages par zone ?
+# Question 1 : quelles sont la première et la dernière ligne du fichier ?
+# TODO : afficher messages[0] et messages[-1]
+
+# Question 2 : combien de messages par zone ?
 compte_par_zone = {}
 for message in messages:
     zone = message["payload"]["zone"]
@@ -107,7 +110,7 @@ def horodatage(valeur: str) -> datetime:
     return datetime.fromisoformat(valeur.replace("Z", "+00:00"))
 
 
-# Question 2 : quel est l'écart, en minutes, entre measured_at et received_at ?
+# Question 3 : quel est l'écart, en minutes, entre measured_at et received_at ?
 ecarts_par_zone = {}
 for message in messages:
     zone = message["payload"]["zone"]
@@ -121,7 +124,7 @@ for zone, ecarts in sorted(ecarts_par_zone.items()):
     print(zone, "écart maximum (min) :", max(ecarts))
 ```
 
-Notez le résultat des deux questions : combien de zones, combien de messages par zone, et quelle zone a l'écart mesure/réception le plus grand. Contrôlez ensuite l'effectif, la première et la dernière ligne du fichier brut, et relevez trois métadonnées de traçabilité. Ne modifiez jamais le brut. Avant la pause, comparez la fraîcheur des zones grâce à vos écarts calculés et révisez votre décision provisoire sans supprimer une donnée gênante.
+Notez le résultat des trois questions : la première et la dernière ligne du fichier, combien de messages par zone, et quelle zone a l'écart mesure/réception le plus grand. Relevez aussi trois métadonnées de traçabilité sur la première ligne affichée. Ne modifiez jamais le brut. Avant la pause, comparez la fraîcheur des zones grâce à vos écarts calculés et révisez votre décision provisoire sans supprimer une donnée gênante.
 
 ## Brut, transformé, exploitable — 25 min
 
