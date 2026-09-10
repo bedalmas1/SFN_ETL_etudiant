@@ -5,7 +5,7 @@ Toutes les commandes s'exécutent sous Linux dans Bash, depuis la racine du dép
 ## Environnement et dépendances
 
 ```bash
-cd /chemin/vers/course-iot-decision
+cd /chemin/vers/SFN_ETL_etudiant
 source .venv/bin/activate
 python3 -m pip install -r sessions/s06bis_indicators_visualization_briefing/requirements.txt
 export PYTHONPATH=src
