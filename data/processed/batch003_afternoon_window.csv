@@ -1,0 +1,4 @@
+batch_id,message_id,site_id,zone,asset_type,sensor,measured_at,value,unit,sequence
+shift-scenario-003,fuel-storage-01-0005,base-projetee-alpha,fuel-storage-01,fuel_storage,temperature,2026-11-02T10:00:00Z,26.4,celsius,5
+shift-scenario-003,fuel-storage-01-0006,base-projetee-alpha,fuel-storage-01,fuel_storage,temperature,2026-11-02T10:05:00Z,26.9,celsius,6
+shift-scenario-003,fuel-storage-01-0007,base-projetee-alpha,fuel-storage-01,fuel_storage,temperature,2026-11-02T10:30:00Z,28.6,celsius,7
