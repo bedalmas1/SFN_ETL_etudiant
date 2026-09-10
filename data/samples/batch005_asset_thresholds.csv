@@ -1,0 +1,13 @@
+asset_type,sensor,direction,limit,note
+drone_battery_storage,temperature,>=,35.0,seuil pédagogique commun
+communications,temperature,>=,35.0,seuil pédagogique commun
+tactical_it,temperature,>=,35.0,seuil pédagogique commun
+light_maintenance,temperature,>=,35.0,seuil pédagogique commun
+optronics,temperature,>=,35.0,seuil pédagogique commun
+fuel_storage,temperature,>=,28.0,vapeurs inflammables : seuil réel plus bas (cf. séquence 5)
+medical_post,temperature,>=,30.0,conservation de matériel médical sensible à la chaleur
+tactical_it,humidity,>=,60.0,risque de condensation sur les équipements informatiques
+optronics,humidity,>=,55.0,risque de buée sur l'optique
+medical_post,humidity,>=,55.0,conservation de matériel médical sensible à l'humidité
+drone_battery_storage,battery_voltage,<=,11.5,tension basse : cellule dégradée par la chaleur
+communications,lora_rssi,<=,-90.0,signal LoRa trop faible pour une transmission fiable
