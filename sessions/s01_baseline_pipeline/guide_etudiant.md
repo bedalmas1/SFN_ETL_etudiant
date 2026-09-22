@@ -177,7 +177,12 @@ for zone, valeurs in sorted(valeurs_par_zone.items()):
     print(f"{zone}: dispersion={dispersion:.1f} mesures au-dessus du seuil={nb_au_dessus}")
 ```
 
-Comparez ce que cet indicateur montre et ce que le graphique du maximum masquait (durée, fréquence, dispersion). Le graphique doit répondre à une question de décision explicite : la dispersion ou le compte de dépassements y répond-il mieux, moins bien, ou différemment ?
+Comparez ce que cet indicateur montre et ce que le graphique du maximum masquait (durée, fréquence, dispersion). 
+Visualisez chacun des graphiques.
+
+Un graphique doit répondre à une question de décision explicite : la dispersion ou le compte de dépassements y répond-il mieux, moins bien, ou différemment ?
+
+Créer d'autres graphiques qui vous semblent plus pertinents.
 
 ## TP 4 — Rédiger le brief décisionnel
 
