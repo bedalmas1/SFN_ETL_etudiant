@@ -104,7 +104,6 @@ effectif ou une zone présente.
 observation.
 - Donnez une action prudente à prendre si une information déterminante venait à
 manquer.
-- Comparez, pour chaque zone, l’instant déclaré de la mesure la plus récente et l’instant de l’extraction.
 
 ## Brut, transformé, exploitable — 25 min
 
