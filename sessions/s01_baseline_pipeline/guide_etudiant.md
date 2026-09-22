@@ -93,7 +93,18 @@ for zone, ecarts in sorted(ecarts_par_zone.items()):
     print(zone, "écart maximum (min) :", max(ecarts))
 ```
 
-Notez le résultat des trois questions : la première et la dernière ligne du fichier, combien de messages par zone, et quelle zone a l'écart mesure/réception le plus grand. Relevez aussi trois métadonnées de traçabilité sur la première ligne affichée. Ne modifiez jamais le brut. Avant la pause, comparez la fraîcheur des zones grâce à vos écarts calculés et révisez votre décision provisoire sans supprimer une donnée gênante.
+Notez le résultat des questions suivantes : 
+- La première et la dernière ligne du fichier
+- Combien de messages par zone
+- Quelle zone a l'écart mesure/réception le plus grand.
+- Relevez trois métadonnées de traçabilité sur la première ligne affichée. 
+- Formulez une observation strictement vérifiable dans le fichier, par exemple un
+effectif ou une zone présente.
+- Formulez séparément une conclusion qui serait excessive au vu de cette seule
+observation.
+- Donnez une action prudente à prendre si une information déterminante venait à
+manquer.
+- Comparez, pour chaque zone, l’instant déclaré de la mesure la plus récente et l’instant de l’extraction.
 
 ## Brut, transformé, exploitable — 25 min
 
