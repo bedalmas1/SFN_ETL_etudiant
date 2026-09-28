@@ -11,24 +11,6 @@ ci-dessous, est une boîte noire fournie par la supervision. Tout le reste
 ce fichier, avec la seule bibliothèque standard de Python (`csv`, `json`,
 `datetime`) et `matplotlib`.
 
-Chaque étape comporte trois paliers :
-
-- **socle** (`etapeN_...`) : obligatoire, noté ;
-- **approfondissement** (`etapeN_approfondissement_...`) : obligatoire, noté --
-  c'est là que se trouve l'essentiel de la réflexion de l'étape ;
-- **défi** (`etapeN_defi_...`) : **BONUS, non exigé**. Réservé aux binômes qui
-  ont terminé socle et approfondissement avant la fin du temps prévu. Ne pas
-  le faire ne coûte aucun point ; le réussir peut rapporter au plus +1 point
-  sur l'ensemble de la séance (note plafonnée à 20) et sera valorisé au brief
-  oral.
-
-Règle de la séance : avant chaque exécution, écrivez votre pronostic dans
-`cas_fil_rouge.md`. Un pronostic écrit après coup ne compte pas -- et un
-pronostic faux, honnêtement noté puis expliqué, vaut plus qu'un pronostic
-juste recopié.
-
-Les docstrings ci-dessous disent **quoi** obtenir, rarement **comment** :
-c'est à vous de choisir la démarche, et de pouvoir la justifier à l'oral.
 """
 
 from __future__ import annotations
